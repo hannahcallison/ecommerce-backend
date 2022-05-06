@@ -31,15 +31,15 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate :{
-        isNumber: true,
+        isNumeric: true,
       }
     },
     category_id: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
         model: 'category',
         key: 'id',
-        unique: false,
       }
     },
   },
