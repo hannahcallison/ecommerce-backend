@@ -66,8 +66,8 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then(delUser => {
-    res.json(delUser);
+  }).then(delCategory => {
+    res.json(delCategory);
   })
   .catch(err => {
     console.log(err);
